@@ -10,6 +10,8 @@ import { SearchComponent } from './search/search.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ProductComponent } from './product/product.component';
 import { StarsComponent } from './stars/stars.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { HomeComponent } from './home/home.component';
 // 使用NgModule装饰器  // declarations声明模块中有什么东西【只能声明组件指令和管道】
 @NgModule({
   declarations: [
@@ -17,7 +19,10 @@ import { StarsComponent } from './stars/stars.component';
     NavbarComponent,
     ProductComponent,
     FooterComponent, 
-     StarsComponent,
+    
+    ProductDetailComponent,
+    HomeComponent,
+    StarsComponent,
     SearchComponent,
     CarouselComponent
   ],

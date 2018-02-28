@@ -1,3 +1,16 @@
-<p>
-  product works!
-</p>
+<!--指令ngFor，，循环数组-->
+<div *ngFor="let p of products" class="prouctsList col-md-4 col-sm-4 col-lg-4">
+  <div class="thumbnail">
+    <!--图片的动态加载更好的方式[src]=""，，少用{{}},,【angular的属性绑定】-->
+    <img [src]="p.imgUrl">
+    <div class="caption">
+      <h4 class="pull-right">{{p.price}}</h4>
+      <h4><a [routerLink]="['/product',p.title]">{{p.title}}</a></h4>
+      <p>{{p.desc}}</p>
+    </div>
+    <div>
+      <app-stars [rating]="p.rating"></app-stars>
+    </div>
+  </div>
+
+</div>

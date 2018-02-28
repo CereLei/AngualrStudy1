@@ -1,3 +1,19 @@
+<!--
+1.如何显示一个星星,
+  <span class="glyphicon glyphicon-star"></span>
+2.如何显示一个空星星
+  <span class="glyphicon glyphicon-star glyphicon-star-empty"></span>
+</p>
+3.如何显示5个星星
+声明一个数组，使用ngfor的循环
+4.如何显示有的空星有的不是
+  使用class的样式判断,如果为true则为显示，为false则为隐藏
+5.如何将商品组件的数据传个当前组件
+  需要加入装饰器input
+-->
 <p>
-  stars works!
+  <span *ngFor="let star of stars" class="glyphicon glyphicon-star glyphicon-star-empty"
+    [class.glyphicon-star-empty]="star"
+  ></span>
+  <span>{{rating}}星级别</span>
 </p>
