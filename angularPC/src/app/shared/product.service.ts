@@ -19,6 +19,9 @@ export class ProductService {
     new Comment(4,2,"2018-01-22 16:30:38","小蓝",3,"老铁你赢了"),
   ]
   constructor() { }
+  getAllCategories():string[]{
+    return ['热血','科幻','古侠']
+  }
   getProducts(){
     return this.products;
   }
