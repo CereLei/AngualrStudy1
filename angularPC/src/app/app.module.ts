@@ -14,6 +14,9 @@ import { StarsComponent } from './stars/stars.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { HomeComponent } from './home/home.component';
 import { FilterPipe } from './pipe/filter.pipe';
+import { MapComponent } from './map/map.component';
+import { FirstComponent } from './first/first.component';
+import { PicturesComponent } from './pictures/pictures.component';
 // 使用NgModule装饰器  // declarations声明模块中有什么东西【只能声明组件指令和管道】
 @NgModule({
   declarations: [
@@ -24,6 +27,9 @@ import { FilterPipe } from './pipe/filter.pipe';
     ProductDetailComponent,
     HomeComponent,
     StarsComponent,
+    MapComponent,
+    FirstComponent,
+    PicturesComponent,
     SearchComponent,
     CarouselComponent,
     FilterPipe

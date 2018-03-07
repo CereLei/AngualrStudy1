@@ -9,9 +9,26 @@
   </div>
   <div class="collapse navbar-collapse navbar-ext1-collapse">
       <ul class="nav navbar-nav">
-          <li><a href="#">联系我们</a></li>
-          <li><a href="#">联系产品</a></li>
-          <li><a href="#">地图位置</a></li>
+          <li><a [routerLink]="['/']">首页</a></li>
+         
+          <li><a [routerLink]="['/pictures']">动漫壁纸</a></li>
+          <li class="dropdown">
+            <a class="btn " data-toggle="dropdown">下拉菜单
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a>菜单一</a></li>
+              <li><a>菜单二</a></li>
+              <li><a>菜单三</a></li>
+            </ul>
+          </li>
+          <li><a [routerLink]="['/map']">地图位置</a></li>
         </ul>
+        <form class="navbar-form navbar-right navForm">
+          <div class="form-group">
+            <input placeholder="Search" type="text" class="form-control">
+          </div>
+          <button class="btn btn-info" >Submit</button>
+        </form>
   </div>
 </nav>
